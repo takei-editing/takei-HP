@@ -1,0 +1,554 @@
+*{
+  box-sizing:border-box;
+}
+
+html{
+  font-size:100%;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body{
+  vertical-align: baseline;
+  color:black;
+  font-family:"ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Gothic UI", "ＭＳ 明朝", "MS Mincho", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+  margin:0 auto;
+  width:95%;
+  height:auto;
+  max-width: 1200px;
+}
+
+li{
+  list-style: none;
+}
+
+/*top-header*/
+#l-header{
+  background-color:#f8f8f8;
+  height:50px;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index: 10;
+}
+
+
+.link-list{
+  width:100%;
+  height:auto;
+  margin:0 auto;
+  line-height: 50px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.header-link{
+  cursor: pointer;
+  font-size:0.9rem;
+  color:black;
+}
+
+.header-link:hover{
+  color:#7fbfff;
+}
+
+/*スマホ用のリンクリスト*/
+
+.header-contents-sp{
+  width:100%;
+  position: fixed;
+  top:0;
+  height:auto;
+  background-color:#f8f8f8;
+  z-index:50;
+  display:none;
+
+}
+
+.link-list-sp{
+  width:100%;
+  height:auto;
+  margin:0 auto;
+  line-height: 40px;
+  flex-direction: column;
+  text-align: center;
+  padding:0 0;
+  font-size:0.9;
+}
+
+.header-link-sp{
+  cursor: pointer;
+  font-size:1rem;
+  color:black;
+}
+
+.header-link-sp:hover{
+  color:#7fbfff;
+}
+
+/*menu-bar*/
+.menu-button{
+  position: fixed;
+  top:0px;
+  right:1rem;
+  z-index: 100;
+}
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+  display:none;
+}
+.menu-trigger {
+  position: relative;
+  width: 30px;
+  height: 26px;
+  margin-top:12px;
+}
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  border-radius: 4px;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 11px;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+/*ボタンの動きの実装*/
+.menu-trigger.active span:nth-of-type(1) {
+  -webkit-transform: translateY(11px) rotate(-315deg);
+  transform: translateY(11px) rotate(-315deg);
+}
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-trigger.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-11px) rotate(315deg);
+  transform: translateY(-11px) rotate(315deg);
+}
+
+/*Top*/
+
+.top{
+  background-image: url(images/neuro-connection.png);
+  background-size: cover;
+  background-position: center center;
+  height:40rem;
+}
+
+.top-wrapper{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items: center;
+}
+
+.top-contents-box{
+  width:45%;
+  height:auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top:6rem;
+}
+
+.top-contents-box p{
+  font-size: 2.5rem;
+  padding-left:2rem;
+  margin:1rem auto;
+}
+
+.top-contents-box h1{
+  font-size: 1.4rem;
+  padding-left:2rem;
+  color:black;
+  font-weight: normal;
+}
+
+/*main内のheader*/
+.m-header{
+  text-align: center;
+  margin:0 auto;
+  padding-top:50px;
+  padding-bottom: 20px;
+  height:auto;
+}
+
+.m-header h1{
+  font-size:1.5rem;
+  margin:0 auto;
+}
+
+.m-header p{
+  font-size:1.3rem;
+  color:#7fbfff;
+}
+
+/*コンテンツ共通部分*/
+.m-contents{
+  height:auto;
+  margin:2rem auto;
+}
+
+/*About*/
+
+.about-contents-box{
+  width:100%;
+  height:auto;
+  padding:3rem 2rem;
+  margin:1rem 0 0 0;
+  background-color: #f7f6f5;
+  border-radius: 3px;
+}
+
+.about-header h2{
+  font-size:1.5rem;
+  border-bottom:1.5px solid #7fbfff;
+  display:inline-block;
+}
+
+.about-inner{
+  margin-top:2rem;
+}
+
+.about-inner p{
+  font-size: 1.2rem;
+}
+
+/*サービス*/
+
+.solution-contents-box{
+  width:100%;
+  height:auto;
+  padding:3rem 2rem;
+  margin:1rem 0 0 0;
+  background-color: #f7f6f5;
+  border-radius: 3px;
+}
+
+.solution-images-wrapper{
+  display:flex;
+  justify-content:space-between;
+}
+
+.solution-container{
+  width:47%;
+  height: auto;
+  text-align: center;
+  padding:0 1rem;
+  border:1px solid #7fbfff;
+}
+
+.rotate-on{
+  transition:1.5s;
+  transform:rotateY(360deg);
+}
+
+.rotater:hover{
+
+}
+
+.solution-header{
+  margin-bottom:1rem;
+}
+
+.solution-header h2{
+  font-size:1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom:1.5px solid #7fbfff;
+  margin-top:2rem;
+}
+
+#movie-fig{
+  width:25%;
+  height:auto;
+  padding-left:20px;
+}
+
+#operation-fig{
+  width:25%;
+  height:auto;
+}
+
+.solution-text{
+  width:100%;
+  height: auto;
+  padding:0 1.3rem;
+  line-height: 2rem;
+  text-align: left;
+  margin:2rem 0;
+}
+
+.solution-text h2{
+  font-size:1.3rem;
+  font-weight: bold;
+  color:#00608d;
+}
+
+.solution-text p{
+  font-size:1.15rem;
+  margin-top:0.6rem;
+}
+
+/*プロフィール*/
+
+.profile-contents-box{
+  width:100%;
+  height:auto;
+  padding:3rem 2rem;
+  margin:1rem 0 0 0;
+  background-color: #f7f6f5;
+  border-radius: 3px;
+}
+
+.profile-header{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-header h1{
+  font-size:1.5rem;
+  border-top:1.5px solid #7fbfff;
+  border-bottom: 1.5px solid #7fbfff;
+  display:inline-block;
+  padding:0.5rem 1rem;
+}
+
+.profile-inner{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin:0 auto 2rem;
+}
+
+
+.profile-image{
+  height:auto;
+  width:45%;
+}
+
+figure{
+  display:block;
+  width:auto;
+  height:auto;
+}
+
+.profile-image img{
+  width:100%;
+  height:auto;
+}
+
+.profile-sentence-box{
+  width:48%;
+  height:auto;
+  font-size:1.1rem;
+  line-height: 2rem;
+}
+
+.profile-sentence-box h2{
+  font-size: 1.3rem;
+  font-weight:bold;
+  text-align: center;
+  border-bottom:1px dashed black;
+}
+
+
+.profile-sentence{
+  margin-top:1.5rem;
+}
+
+.profile-sentence dt{
+  font-weight: bold;
+  font-size:1.3rem;
+  text-align: center;
+  border-bottom:1px dashed black;
+}
+
+.profile-link-cover{
+  width:100%;
+  height:auto;
+  display:flex;
+  justify-content: space-around;
+
+}
+
+.profile-link-cover li{
+  width:30%;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.profile-link{
+  width:100%;
+  font-size:1.3rem;
+  color:#7fbfff;
+  display: inline-block;
+  padding:6px 30px;
+}
+
+.profile-link-cover li:hover{
+  background-color: rgba(187, 226, 241, 0.5);
+}
+
+/*パートナー*/
+#main-partner{
+  background-image:url(images/handshake.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-color: rgba(255,255,255,0.75);
+  background-blend-mode: lighten;
+}
+
+.partner-header{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.partner-header h2{
+  font-size:1.5rem;
+  border-top:1.5px solid #7fbfff;
+  border-bottom: 1.5px solid #7fbfff;
+  display:inline-block;
+  padding:0.5rem 1rem;
+}
+
+.partner-contents-box{
+  height:auto;
+}
+
+.swiper-container-outor{
+  width:100%;
+  height:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:3rem;
+}
+
+.swiper-container-inner{
+  width:65rem;
+}
+
+.slider-image{
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-image a{
+  width:49%;
+}
+
+.slider-contents{
+  width:49%;
+}
+
+.slider-contents h3{
+  font-size:1.3rem;
+  border-bottom: 1.5px dashed #7fbfff;
+  text-align: center;
+}
+
+.slider-contents p{
+  text-align: left;
+  margin-top:1rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+/*slider設定*/
+.slider{
+    margin: 30px auto;
+    width: 80%;
+    height:auto;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+    padding:0 30px;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+    font-size: 2.5rem;
+}
+
+
+/*お問い合わせ*/
+#main-contact{
+  background-image: url(images/meeting.png);
+  background-color: rgba(255,255,255,0.9);
+  background-size: cover;
+  background-position: left;
+  background-blend-mode: lighten;
+}
+
+
+.contact-contents-box{
+  padding-bottom:3rem;
+}
+
+.contact-contents-box p{
+  font-size:1.3rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.contact-contents-box a{
+  cursor: pointer;
+  color:blue;
+}
+
+/*footer*/
+footer{
+  background-color: #7fbfff;
+  opacity:0.8;
+  height:3rem;
+  position:relative;
+}
+
+/*fadeInUpの実装*/
+.fadeInUp{
+  opacity : 0;
+  transition: all 2.5s;
+  margin-bottom:7rem;
+
+}
+
+.fade-on{
+  opacity:1;
+}
+
+#copyright{
+  position:absolute;
+  bottom:0.9rem;
+  width:100%;
+  text-align:center;
+}
