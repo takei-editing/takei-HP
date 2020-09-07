@@ -19,7 +19,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body{
   vertical-align: baseline;
   color:black;
-  font-family:"ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Gothic UI", "ＭＳ 明朝", "MS Mincho", sans-serif;
+  font-family:"ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体","ＭＳ 明朝", "MS Mincho", serif;
 }
 
 a {
