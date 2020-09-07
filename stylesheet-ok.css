@@ -22,6 +22,14 @@ body{
   font-family:"ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体","ＭＳ 明朝", "MS Mincho", serif;
 }
 
+.font-english {
+  font-family: "Sorts Mill Goudy", "Arial", serif !important;
+}
+
+.font-number{
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体","ＭＳ 明朝", "MS Mincho", serif !important;
+}
+
 a {
   text-decoration: none;
 }
