@@ -9,6 +9,14 @@
     font-size: 85%;
   }
 
+  .partner-link-cover{
+    flex-wrap:wrap;
+  }
+
+  .partner-link-cover li{
+    width:32%;
+  }
+
 @media all and (max-width: 768px) {
   /*全体*/
   html{
@@ -81,6 +89,31 @@
     margin-top:1rem;
   }
 
+  /*partnerの調整*/
+  .partner-link-cover{
+    flex-wrap:wrap;
+  }
+  .partner-link-cover li{
+    width:49%;
+  }
 
+  .swiper-container-inner{
+    width:90%;
+  }
+
+  .slider-image{
+    flex-direction: column;
+  }
+  .slider-image a{
+    width:100%;
+  }
+
+  .slider-contents{
+    width:100%;
+  }
+
+  .slider-contents h3{
+    font-size:1.2rem;
+  }
 
 }
