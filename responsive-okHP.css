@@ -17,6 +17,7 @@
 
   .container{
     max-width:500px;
+    overflow: hidden;
   }
 
   /*headerの非表示*/
