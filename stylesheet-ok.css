@@ -439,6 +439,40 @@ figure{
   padding:0.5rem 1rem;
 }
 
+
+.partner-link-box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: auto;
+}
+
+.partner-link-cover{
+  display: flex;
+  justify-content:space-around;
+  width:85%;
+}
+
+.partner-link-cover li{
+  display:inline-block;
+  width:15%;
+  text-align: center;
+  border:1.2px solid gray;
+  margin-bottom:7.5px;
+  cursor: pointer;
+}
+
+.partner-link-cover li:hover{
+  background-color: rgba(187, 226, 241, 0.4)
+}
+
+.partner-link{
+  line-height: 2rem;
+  display: inline-block;
+  width:100%;
+}
+
 .partner-contents-box{
   height:auto;
 }
