@@ -381,6 +381,7 @@ li{
   width: 100%;
   height:auto;
   color:#fff;
+  font-size:1.3rem;
 }
 
 .hover-parent:hover .hover-mask {
@@ -542,8 +543,6 @@ figure{
 
 
 .partner-link-box{
-  display:flex;
-  justify-content: center;
   align-items: center;
   width:100%;
   height: auto;
@@ -552,15 +551,24 @@ figure{
 .partner-link-cover{
   display: flex;
   justify-content:space-around;
-  width:85%;
+  width:100%;
+}
+
+.slick-list{
+  width:100%;
+}
+
+.slick-track{
+  display: flex;
+  justify-content: center;
 }
 
 .partner-link-cover li{
   display:inline-block;
-  width:15%;
+  width:15% !important;
   text-align: center;
   border:1.2px solid gray;
-  margin-bottom:7.5px;
+  margin:0 5px 7.5px;
   cursor: pointer;
 }
 
@@ -578,7 +586,7 @@ figure{
   height:auto;
 }
 
-.swiper-container-outor{
+.slider-container-outor{
   width:100%;
   height:auto;
   display:flex;
@@ -587,7 +595,7 @@ figure{
   padding-bottom:3rem;
 }
 
-.swiper-container-inner{
+.slider-container-inner{
   width:100%;
 }
 
