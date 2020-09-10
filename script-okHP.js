@@ -1,3 +1,4 @@
+
 $(function(){
   $(window).scroll(function (){
     $(".fadeInUp").each(function(){
@@ -44,6 +45,13 @@ $(function(){
   //sliderの導入//
   $(".slider").slick({
     dots:true,
+  });
+
+  $(".partner-link-cover").slick({
+    asNavFor:'.slider',
+    focusOnSelect: true,
+    arrows: false,
+    slidesToShow:6,
   });
 
 });
