@@ -178,10 +178,11 @@ li{
 }
 
 .top-contents-box{
-  width:45%;
+  width:50%;
   height:auto;
   background-color: rgba(255, 255, 255, 0.8);
   margin-top:6rem;
+  padding-bottom:1rem;
 }
 
 .top-contents-box p{
@@ -201,8 +202,7 @@ li{
 .m-header{
   text-align: center;
   margin:0 auto;
-  padding-top:50px;
-  padding-bottom: 20px;
+  padding:50px 0 20px;
   height:auto;
 }
 
@@ -241,21 +241,31 @@ li{
 
 .about-inner{
   margin-top:2rem;
+  line-height: 2.2rem;
 }
 
 .about-inner p{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /*サービス*/
 
+.contents-wrapper{
+  background-color:#f7f6f5;
+}
+
 .solution-contents-box{
   width:100%;
   height:auto;
-  padding:3rem 2rem;
+  padding:0rem 2rem 4rem ;
   margin:1rem 0 0 0;
-  background-color: #f7f6f5;
   border-radius: 3px;
+}
+
+.solution-header{
+  text-align: center;
+  font-size:1.4rem;
+  margin-bottom:1rem;
 }
 
 .solution-images-wrapper{
@@ -276,13 +286,6 @@ li{
   transform:rotateY(360deg);
 }
 
-.rotater:hover{
-
-}
-
-.solution-header{
-  margin-bottom:1rem;
-}
 
 .solution-header h2{
   font-size:1.2rem;
@@ -296,6 +299,7 @@ li{
   width:25%;
   height:auto;
   padding-left:20px;
+  opacity: 0.7;
 }
 
 #operation-fig{
@@ -323,6 +327,95 @@ li{
   margin-top:0.6rem;
 }
 
+.solution-contents-box2{
+  width:100%;
+  height:auto;
+  padding:1rem 2rem 3rem;
+  background-color: #f7f6f5;
+  border-radius: 3px;
+}
+
+/*example*/
+.example-header{
+  text-align: center;
+  font-size: 1.4rem;
+  border-bottom: 1.5px dashed gray;
+  margin-bottom: 3rem;
+}
+
+.example-container-wrapper{
+  display: flex;
+  justify-content:space-between;
+}
+
+.example-container{
+  width:32%;
+  height: auto;
+  text-align: center;
+  padding:1rem 0.5rem;
+  border:1px solid black;
+  background-color:white;
+}
+
+.hover-parent {
+  width: 100%;
+  height:auto;
+  position:relative;
+}
+
+.hover-mask{
+  width:100%;
+  height:95%;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  transition:	all 0.2s ease;
+}
+
+.hover-mask a{
+  width: 100%;
+  height:auto;
+  color:#fff;
+}
+
+.hover-parent:hover .hover-mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+.example-text{
+  width:100%;
+  height: auto;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.example-text h2{
+  font-size:1.3rem;
+  font-weight: bold;
+  color:#00608d;
+}
+
+.example-text p{
+  font-size:1.1rem;
+  margin-top:0.6rem;
+}
+
+#break-fig{
+  width:100%;
+}
+
+#anime-fig{
+  width:100%;
+}
+
+#webpage-fig{
+  width:100%;
+}
 /*プロフィール*/
 
 .profile-contents-box{
@@ -495,7 +588,7 @@ figure{
 }
 
 .swiper-container-inner{
-  width:65rem;
+  width:100%;
 }
 
 .slider-image{
@@ -559,7 +652,7 @@ figure{
 
 .contact-contents-box p{
   font-size:1.3rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   text-align: center;
 }
 
