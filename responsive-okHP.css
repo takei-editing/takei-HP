@@ -9,12 +9,12 @@
     font-size: 85%;
   }
 
-  .partner-link-cover{
+  .slick-track{
     flex-wrap:wrap;
   }
 
   .partner-link-cover li{
-    width:32%;
+    width:32% !important;
   }
 
 @media all and (max-width: 768px) {
@@ -101,11 +101,12 @@
   }
 
   /*partnerの調整*/
-  .partner-link-cover{
+  .slick-track{
     flex-wrap:wrap;
   }
+
   .partner-link-cover li{
-    width:49%;
+    width:45% !important;
   }
 
   .swiper-container-inner{
