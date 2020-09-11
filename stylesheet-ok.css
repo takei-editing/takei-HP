@@ -227,7 +227,7 @@ li{
 .about-contents-box{
   width:100%;
   height:auto;
-  padding:3rem 2rem;
+  padding:3rem 1.5rem;
   margin:1rem 0 0 0;
   background-color: #f7f6f5;
   border-radius: 3px;
@@ -241,7 +241,7 @@ li{
 
 .about-inner{
   margin-top:2rem;
-  line-height: 2.2rem;
+  line-height: 2.5rem;
 }
 
 .about-inner p{
@@ -438,7 +438,7 @@ li{
   border-top:1.5px solid #7fbfff;
   border-bottom: 1.5px solid #7fbfff;
   display:inline-block;
-  padding:0.5rem 1rem;
+  padding:0.5rem 0.5rem;
 }
 
 .profile-inner{
@@ -614,6 +614,7 @@ figure{
 
 .slider-contents h3{
   font-size:1.3rem;
+  margin-top:1rem;
   border-bottom: 1.5px dashed #7fbfff;
   text-align: center;
 }
@@ -680,13 +681,15 @@ footer{
 /*fadeInUpの実装*/
 .fadeInUp{
   opacity : 0;
-  transition: all 2.5s;
+  transform:translate(0,50px);
+  transition: all 2s;
   margin-bottom:7rem;
 
 }
 
 .fade-on{
   opacity:1;
+  transform: translate(0,0);
 }
 
 #copyright{
