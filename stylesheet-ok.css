@@ -501,7 +501,7 @@ figure{
 }
 
 .profile-link-cover li{
-  width:30%;
+  width:45%;
   border: 1px solid darkgray;
   border-radius: 4px;
   text-align: center;
@@ -568,7 +568,7 @@ figure{
   width:15% !important;
   text-align: center;
   border:1.2px solid gray;
-  margin:0 5px 7.5px;
+　margin:0 5px 7.5px;
   cursor: pointer;
 }
 
