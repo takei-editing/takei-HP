@@ -1,5 +1,7 @@
 *{
   box-sizing:border-box;
+  min-height:0;
+  min-width : 0;
 }
 
 html{
@@ -568,7 +570,7 @@ figure{
   width:15% !important;
   text-align: center;
   border:1.2px solid gray;
-　margin:0 5px 7.5px;
+  margin:0 5px 7.5px;
   cursor: pointer;
 }
 
