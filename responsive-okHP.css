@@ -50,6 +50,16 @@
 
   }
 
+  /*about部分の文字の大きさ*/
+
+  .about-header h2{
+    font-size:1.3rem;
+  }
+
+  .about-inner p{
+    font-size: 1.2rem;
+  }
+
   /*サービス画面の調整*/
 
   .solution-images-wrapper{
@@ -74,6 +84,10 @@
   }
 
   /*profileの調整*/
+  .profile-header h1{
+    font-size: 1.2rem;
+  }
+
   .profile-inner{
     display: block;
   }
@@ -101,6 +115,10 @@
   }
 
   /*partnerの調整*/
+  .partner-header h2{
+    font-size:1.2rem;
+  }
+
   .slick-track{
     flex-wrap:wrap;
   }
@@ -127,5 +145,6 @@
   .slider-contents h3{
     font-size:1.2rem;
   }
+
 
 }
