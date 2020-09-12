@@ -591,9 +591,6 @@ figure{
 .slider-container-outor{
   width:100%;
   height:auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
   padding-bottom:3rem;
 }
 
@@ -603,7 +600,7 @@ figure{
 
 .slider-image{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .slider-image a{
@@ -643,7 +640,7 @@ figure{
 .slick-prev:before,
 .slick-next:before {
     color: black;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 
