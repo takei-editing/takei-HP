@@ -132,7 +132,7 @@
   }
 
   .slider-image{
-   
+   display:block;
   }
   .slider-image a{
     width:100%;
