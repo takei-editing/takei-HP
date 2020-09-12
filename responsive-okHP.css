@@ -47,7 +47,15 @@
   .top-contents-box{
     width:100%;
     margin-bottom: 3rem;
+  }
 
+  .top-contents-box p{
+    padding: 0 0.5rem;
+  }
+
+  .top-contents-box h1{
+    padding: 0 0.5rem;
+    font-size: 1.25rem;
   }
 
   /*about部分の文字の大きさ*/
@@ -144,6 +152,11 @@
 
   .slider-contents h3{
     font-size:1.2rem;
+  }
+
+  /*お問い合わせ折り返し調整*/
+  .contact-contents-box p{
+    font-size:1rem;
   }
 
 
