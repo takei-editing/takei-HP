@@ -598,8 +598,6 @@ figure{
 }
 
 .slider-image{
-  display: flex;
-  justify-content: center;
 }
 
 .slider-image a{
